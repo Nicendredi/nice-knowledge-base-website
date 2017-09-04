@@ -39,6 +39,9 @@ exclude:
 
 collections:
   sets:
+    output: false
+  snippets:
+    output: true
 
 
 jekyll-archives:
@@ -61,6 +64,12 @@ defaults:
       type: "sets"
     values:
       _hide_content: true
+  -
+    scope:
+      type: "snippets"
+    values:
+      layout: "post"
+      comments: true
   -
     scope:
       path: "index.html"
